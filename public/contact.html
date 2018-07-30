@@ -1,0 +1,27 @@
+<div class = "row">
+  <div class="col-md-6">
+    <h2>
+      {{ song.number }} {{ song.name }}
+    </h2>
+  </div>
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-2">
+    <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteSong(song._id)">Delete</button></a>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+<div ng-hide="editMode" class="container">
+  <div>
+    <p ng-if="song.number"> Number: {{ song.number }} </p>
+    <p ng-if="song.name"> Number: {{ song.name }} </p>
+    <p>
+      <button style="margin-top:20px" class="btn btn-default" ng-click="toggleEdit()">Edit</button>
+      <a style="margin-top:20px" class="btn btn-default" href="#/">Back</a>
+    </p>
+  </div>
+</div>
+<!-- Contact form -->
+<div ng-include="contactFormUrl">
+</div>
