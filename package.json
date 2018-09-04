@@ -9,23 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blacksunol/alokara.git"
+    "url": "https://github.com/huuvinhnguyen/alokara.git"
   },
   "keywords": [
     "MEAN",
     "Express",
     "Angular"
   ],
-  "author": "Chris Chang",
-  "license": "MIT",
+  "author": "Vinh Nguyen",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/blacksunol/alokara/issues"
+    "url": "https://github.com/huuvinhnguyen/alokara/issues"
   },
-  "homepage": "https://github.com/blacksunol/alokara",
+  "homepage": "https://github.com/huuvinhnguyen/alokara",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mongodb": "^2.0.43",
-     "coap": "^0.22.0"
+     "coap": "^0.22.0",
   }
 }
