@@ -2,7 +2,7 @@ angular.module("contactsApp", ['ngRoute'])
     .config(function($routeProvider) {
         $routeProvider
             .when("/", {
-                templateUrl: "list.html",
+                templateUrl: "dht_css/index.htm",
                 controller: "ListController",
                 resolve: {
                     contacts: function(Contacts) {
@@ -29,7 +29,7 @@ angular.module("contactsApp", ['ngRoute'])
         this.getContacts = function() {
             return $http.get("/contacts").
                 then(function(response) {
-                    return response;
+ htm                return response;
                 }, function(response) {
                     alert("Error finding contacts.");
                 });
