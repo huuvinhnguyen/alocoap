@@ -19,7 +19,7 @@ angular.module("contactsApp", ['ngRoute'])
                 templateUrl: "contact.html"
             })
             .when("/dht_css", {
-                redirectTo: "/index.htm"
+                redirectTo: "/dht_css/index.htm"
             })
             .otherwise({
                 redirectTo: "/"
