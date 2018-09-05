@@ -19,9 +19,9 @@
   "author": "Vinh Nguyen",
   "license": "",
   "bugs": {
-    "url": "https://github.com/huuvinhnguyen/alokara/issues"
+    "url": "https://github.com/huuvinhnguyen/aloiot/issues"
   },
-  "homepage": "https://github.com/huuvinhnguyen/alokara",
+  "homepage": "https://github.com/huuvinhnguyen/aloiot",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
