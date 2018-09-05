@@ -29,7 +29,7 @@ angular.module("contactsApp", ['ngRoute'])
         this.getContacts = function() {
             return $http.get("/contacts").
                 then(function(response) {
- htm                return response;
+                    return response;
                 }, function(response) {
                     alert("Error finding contacts.");
                 });
