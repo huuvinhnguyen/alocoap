@@ -60,5 +60,5 @@ websocket.onmessage = function (evt) {
 };
 
 function publishAction() {
-	alrt("Published");
+	alert("Published");
 }
