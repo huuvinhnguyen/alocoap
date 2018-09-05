@@ -110,23 +110,23 @@ app.delete("/songs/:id", function(req, res) {
   });
 });
 
-var coap        = require('coap')
-  , server      = coap.createServer()
+// var coap        = require('coap')
+//   , server      = coap.createServer()
  
-server.on('request', function(req, res) {
-  res.end('Hello the gioi ' + req.url.split('/')[1] + '\n')
-})
+// server.on('request', function(req, res) {
+//   res.end('Hello the gioi ' + req.url.split('/')[1] + '\n')
+// })
  
-// the default CoAP port is 5683
-server.listen(function() {
-  var req = coap.request('coap://localhost/light')
+// // the default CoAP port is 5683
+// server.listen(function() {
+//   var req = coap.request('coap://localhost/light')
  
-  req.on('response', function(res) {
-    res.pipe(process.stdout)
-    res.on('end', function() {
-//      process.exit(0)
-    })
-  })
+//   req.on('response', function(res) {
+//     res.pipe(process.stdout)
+//     res.on('end', function() {
+// //      process.exit(0)
+//     })
+//   })
  
-  req.end()
-})
+//   req.end()
+// })
