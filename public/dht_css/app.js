@@ -60,17 +60,12 @@ websocket.onmessage = function (evt) {
 };
 
 function publishAction() {
-	 // publish a message to a topic
-    client.publish('topic1/#', 'my message', function() {
-        console.log("Message is published");
-        client.end(); // Close the connection when published
-    });
 	alert("Published");
 }
 
 var mqtt = require('mqtt');
 var options = {
-    port: 16242,
+    port: 26242,
     host: 'mqtt://m11.cloudmqtt.com',
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
     username: 'mntdttex',
