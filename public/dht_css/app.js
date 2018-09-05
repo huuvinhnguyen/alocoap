@@ -44,7 +44,6 @@ function refresh() {
 	xmlHttp.open("GET", "data", true);
 	xmlHttp.send();
 }
-
 var tempGauge = createVerGauge('temp', -20, 60, ' °C').setVal(0).setColor(getTempColor(0));
 var humGauge = createRadGauge('hum', 0, 100, '%').setVal(80).setColor(getHumColor(80));
 
@@ -60,3 +59,6 @@ websocket.onmessage = function (evt) {
  humGauge.setVal(obj.humidity).setColor(getHumColor(obj.humidity));
 };
 
+function publishAction() {
+	alrt("Published");
+}
