@@ -96,11 +96,12 @@ client.on('connect', function() { // When connected
 });
 
 function publishAction() {
-	alert("Published");
+	alert("Published1");
 	// publish a message to a topic
     client.publish('topic1/#', 'my message', function() {
         console.log("Message is published");
         client.end(); // Close the connection when published
     });
+alert("Published2");
 }
 
