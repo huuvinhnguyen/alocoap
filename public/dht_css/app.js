@@ -60,6 +60,11 @@ websocket.onmessage = function (evt) {
 };
 
 function publishAction() {
+	 // publish a message to a topic
+    client.publish('topic1/#', 'my message', function() {
+        console.log("Message is published");
+        client.end(); // Close the connection when published
+    });
 	alert("Published");
 }
 
