@@ -59,7 +59,7 @@
 // humGauge.setVal(obj.humidity).setColor(getHumColor(obj.humidity));
 //};
 
-var mqtt = require('mqtt');
+var mqtt = require("mqtt");
 
 var options = {
 
