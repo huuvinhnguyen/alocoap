@@ -18,6 +18,9 @@ angular.module("contactsApp", ['ngRoute'])
                 controller: "EditContactController",
                 templateUrl: "contact.html"
             })
+            .when("/dht_css", {
+            redirectTo: "/"
+        })
             .otherwise({
                 redirectTo: "/"
             })
